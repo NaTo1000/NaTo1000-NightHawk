@@ -22,11 +22,11 @@ const ACHIEVEMENTS = [
   { id: 'unstoppable',   name: 'Unstoppable',    description: 'Reach 500 glory points.',                 points:   50, icon: '🔥' },
   { id: 'legendary',     name: 'Legendary',      description: 'Reach 1500 glory points.',                points:  100, icon: '⚡' },
   { id: 'mythic_rise',   name: 'Mythic Rise',    description: 'Reach 4000 glory points.',                points:  250, icon: '🌟' },
-  { id: 'glory_ascent',  name: 'Glory Ascent',   description: 'Reach 10 000 glory points.',              points:  500, icon: '👑' },
+  { id: 'glory_ascent',  name: 'Glory Ascent',   description: 'Reach 10,000 glory points.',              points:  500, icon: '👑' },
   { id: 'hat_trick',     name: 'Hat Trick',      description: 'Unlock 3 achievements.',                  points:   30, icon: '🎩' },
   { id: 'collector',     name: 'Collector',      description: 'Unlock 5 achievements.',                  points:   75, icon: '🏆' },
   { id: 'completionist', name: 'Completionist',  description: 'Unlock every achievement.',               points:  200, icon: '🎖️' },
-  { id: 'nighthawk',     name: 'NightHawk',      description: 'Earn glory in the dead of night (00:00–05:00).', points: 50, icon: '🦅' },
+  { id: 'nighthawk',     name: 'NightHawk',      description: 'Earn glory in the dead of night (00:00-05:00).', points: 50, icon: '🦅' },
 ];
 
 // ─── GlorySystem class ───────────────────────────────────────────────────────

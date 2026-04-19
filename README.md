@@ -19,8 +19,8 @@ A full glory/achievement/leaderboard system built as a web application.
 | Recruit    | 0               |
 | Warrior    | 100             |
 | Champion   | 500             |
-| Legend     | 1 500           |
-| Mythic     | 4 000           |
+| Legend     | 1,500           |
+| Mythic     | 4,000           |
 | **Glory**  | 10 000          |
 
 ## Getting Started
