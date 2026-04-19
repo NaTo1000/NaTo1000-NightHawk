@@ -1,0 +1,10 @@
+{
+  "name": "nighthawk-system-of-glory",
+  "version": "1.0.0",
+  "description": "NightHawk – System of Glory",
+  "main": "src/glory.js",
+  "scripts": {
+    "test": "node tests/glory.test.js"
+  },
+  "license": "MIT"
+}
