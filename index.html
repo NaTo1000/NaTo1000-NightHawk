@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NightHawk – System of Glory</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+  <!-- ── Header ─────────────────────────────────────────────────── -->
+  <header>
+    <div class="container">
+      <span class="logo">🦅 NightHawk</span>
+      <span class="tagline">System of Glory</span>
+    </div>
+  </header>
+
+  <!-- ── Main ───────────────────────────────────────────────────── -->
+  <main>
+    <div class="container">
+      <div class="grid">
+
+        <!-- Leaderboard -->
+        <section class="card grid--full">
+          <div class="card__title">🏆 Leaderboard</div>
+          <ul class="leaderboard" id="leaderboard-list">
+            <li class="empty"><div class="empty__icon">🏆</div>No players yet. Add someone!</li>
+          </ul>
+        </section>
+
+        <!-- Add player -->
+        <section class="card">
+          <div class="card__title">👤 Players</div>
+          <form id="add-player-form" class="form-row" autocomplete="off">
+            <input id="player-name-input" type="text" placeholder="Player name…" required maxlength="32" />
+            <button type="submit" class="btn btn--primary">Add</button>
+          </form>
+          <ul class="player-list" id="player-list">
+            <li class="empty"><div class="empty__icon">👤</div>No players yet.</li>
+          </ul>
+        </section>
+
+        <!-- Award points -->
+        <section class="card">
+          <div class="card__title">⚡ Award Glory</div>
+          <form id="award-form" autocomplete="off">
+            <div class="form-row">
+              <select id="player-select">
+                <option value="">— select player —</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <input id="points-input" type="number" min="1" max="100000" value="50" required />
+              <button type="submit" class="btn btn--primary">Award</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- Achievements -->
+        <section class="card grid--full">
+          <div class="card__title">🎖️ Achievements</div>
+          <div class="ach-grid" id="ach-grid">
+            <div class="empty" style="grid-column:1/-1">
+              <div class="empty__icon">🎖️</div>Select a player to see achievements.
+            </div>
+          </div>
+        </section>
+
+      </div><!-- /.grid -->
+    </div><!-- /.container -->
+  </main>
+
+  <!-- ── Toast container ────────────────────────────────────────── -->
+  <div id="toast-container"></div>
+
+  <!-- ── Scripts ────────────────────────────────────────────────── -->
+  <script src="src/glory.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>
